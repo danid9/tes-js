@@ -6,7 +6,7 @@ let proxyPort;
 var worker_default = {
   async fetch(request, env, ctx) {
     try {
-      const proxyListUrl = env.LIST_IP_PORT || "https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxy%20ip.txt";
+      const proxyListUrl = env.LIST_IP_PORT || "";
       if (!proxyListUrl) throw new Error("No Proxy Bank URL Provided!");
 
       // Unlimited caching variables

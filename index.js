@@ -5,7 +5,7 @@ let proxyIP = "";
 let cachedProxyList = [];
 
 async function getProxyList() {
-  const proxyBankUrl = "https://raw.githubusercontent.com/jaka2m/worker/main/output.txt"; // Tetap menggunakan proxyBankUrl
+  const proxyBankUrl = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt"; // Tetap menggunakan proxyBankUrl
   try {
     const proxyBank = await fetch(proxyBankUrl);
     if (proxyBank.status === 200) {
@@ -120,7 +120,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
       const { proxyIP, proxyPort, country, org } = proxy;
       const ipPort = `${proxyIP}:${proxyPort}`;
-      const Status = `https://ipcf.vlessipcf.us.kg/key=geo/ip=${proxyIP}:${proxyPort}`;
+      const Status = `https://id1.foolvpn.me/api/v1/check=${proxyIP}:${proxyPort}`;
 
       const uriWithPath = new URL(uri);
       uriWithPath.searchParams.set("path", `/${proxyIP}-${proxyPort}`);

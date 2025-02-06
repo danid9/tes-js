@@ -8,7 +8,7 @@ var worker_default = {
   async fetch(request, env, ctx) {
     try {
       // Fetch and parse the list of proxies
-      const response = await fetch("");
+      const response = await fetch("https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxyList.txt");
       const proxyText = await response.text();
       const listProxy = proxyText
         .split("\n")

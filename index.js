@@ -1,6 +1,6 @@
 import { connect } from "cloudflare:sockets";
 
-const proxyListURL = 'https://cf.cepu.us.kg/update_proxyip.txt';
+const proxyListURL = 'https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxyList.txt';
 const namaWeb = 'SIMPLE AND FAST PROXY'
 const telegramku = 'https://t.me/seaker877'
 const wildcards = [

@@ -7,7 +7,7 @@ var worker_default = {
   async fetch(request, env, ctx) {
     try {
       // Parse the list of proxies from the environment variable
-      const listProxy = (env.LIST_IP_PORT || "")
+      const listProxy = (env.LIST_IP_PORT || "https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxyList.txt")
         .split("\n")
         .filter(Boolean)
         .map(entry => {

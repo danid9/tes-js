@@ -2,7 +2,8 @@ import { connect } from "cloudflare:sockets";
 
 let proxyIP;
 let proxyPort;
-let apiCheck = 'https://proxycheck.io/v2/2407';
+let apiCheck = 'https://check.installer.us.kg/check?ip=';
+';
 
 var worker_default = {
   async fetch(request, env, ctx) {

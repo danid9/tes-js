@@ -2,7 +2,7 @@ import { connect } from "cloudflare:sockets";
 
 let proxyIP;
 let proxyPort;
-let apiCheck = 'https://ip-api.com/json/${ipAddress}`);
+let apiCheck = 'https://id1.foolvpn.me/api/v1/check';
 
 var worker_default = {
   async fetch(request, env, ctx) {

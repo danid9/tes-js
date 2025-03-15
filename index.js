@@ -3,7 +3,7 @@ let listProxy = []; // Variabel global
 
 async function fetchProxyList() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxyList.txt');
+        const response = await fetch('https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxy-ip.json');
         listProxy = await response.json(); // Simpan hasil ke variabel global
         console.log(listProxy); // Cek isi data
     } catch (error) {

@@ -1,5 +1,5 @@
 import { connect } from 'cloudflare:sockets';
-const listProxy = ['https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxy-ip.json'];
+const listProxy = "https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxy-ip.json";
 let proxyIP;
 export default {
     async fetch(request, ctx) {

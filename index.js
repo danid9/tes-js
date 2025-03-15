@@ -1,8 +1,15 @@
 import { connect } from 'cloudflare:sockets';
-const listProxy = [
-    { path: '/ok1', proxy: '51.79.158.126' },
-    //tambahin sendiri
-];
+async function fetchProxyList() {
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/danid9/tes-js/refs/heads/main/proxyList.txt'); // Ganti dengan URL file Anda
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Gagal mengambil data:', error);
+    }
+}
+
+fetchProxyList();
 let proxyIP;
 export default {
     async fetch(request, ctx) {
